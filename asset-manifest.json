@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/WithU-Blog/static/css/main.cb888410.css",
+    "main.js": "/WithU-Blog/static/js/main.034fc448.js",
+    "static/media/web-header.png": "/WithU-Blog/static/media/web-header.cee1c87d71cdf0762fa6.png",
+    "index.html": "/WithU-Blog/index.html",
+    "main.cb888410.css.map": "/WithU-Blog/static/css/main.cb888410.css.map",
+    "main.034fc448.js.map": "/WithU-Blog/static/js/main.034fc448.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb888410.css",
+    "static/js/main.034fc448.js"
+  ]
+}
