@@ -1,0 +1,39 @@
+{
+  "blogs": [
+    {
+      "title": "My new website",
+      "body": "With version 6, React Router has just become alot more awesome. The now better, path matching algorithm, enables us to match a particular route match without the exact prop. Earlier, without exact, any URL starting with the concerned keyword would be loaded, as the matching process was done from top to down the route definitions. But now, we do not have to worry about that, as React Router has a better algorithm for loading the best route for a particular URL, the order of defining does not really matters now.",
+      "author": "Manik Chawla",
+      "id": 1,
+      "photo": "android-chrome-512x512.png"
+    },
+    {
+      "title": "jnkllbb",
+      "body": "dfghjk",
+      "author": "Abhishek",
+      "photo": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "id": 2
+    },
+    {
+      "title": "New pic",
+      "body": "re's an example code snippet that demonstrates these steps:\n\njavascript\nCopy code\nimport React, { useState } from 'react';\n\nfunction ImageUploadForm() {\n  const [file, setFile] = useState(null);\n\n  const handleFileChange = (event) => {\n    setFile(event.target.files[0]);\n  };\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    const formData = new FormData();\n    formData.append('image', file);\n    fetch('http://localhost:8000/images', {\n      method: 'POST',\n      body: formData,\n    })\n      .then((response) => response.json())\n      .then((data) => console.log(data))\n      .catch((error) => console.error(error));\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <input type=\"file\" onChange={handleFileChange} />\n      <button type=\"submit\">Upload</button>\n    </form>\n  );\n}\nIn this example, we're sending a POST request to the /images endpoint with the image file in a FormData object. In the JSON server, we would need to create a route handler for this endpoint and use multer to handle the file upload and storage.\n\nI hope this helps! Let me know if you have any further questions.\n\n\n\n\n\n",
+      "author": "Chirag",
+      "photo": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "id": 3
+    },
+    {
+      "title": "4th one",
+      "body": "re's an example code snippet that demonstrates these steps:\n\njavascript\nCopy code\nimport React, { useState } from 'react';\n\nfunction ImageUploadForm() {\n  const [file, setFile] = useState(null);\n\n  const handleFileChange = (event) => {\n    setFile(event.target.files[0]);\n  };\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    const formData = new FormData();\n    formData.append('image', file);\n    fetch('http://localhost:8000/images', {\n      method: 'POST',\n      body: formData,\n    })\n      .then((response) => response.json())\n      .then((data) => console.log(data))\n      .catch((error) => console.error(error));\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <input type=\"file\" onChange={handleFileChange} />\n      <button type=\"submit\">Upload</button>\n    </form>\n  );\n}\nIn this example, we're sending a POST request to the /images endpoint with the image file in a FormData object. In the JSON server, we would need to create a route handler for this endpoint and use multer to handle the file upload and storage.\n\nI hope this helps! Let me know if you have any further questions.\n\n\n\n\n\n",
+      "author": "Aman",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6GHAdHH5JRAecOr55AsY3Xj_EWzFeGDu5a08r3hInbPDImAfCb85a0-ApSrbzmz4OzBI&usqp=CAU",
+      "id": 4
+    },
+    {
+      "title": "Anxiety",
+      "body": "Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat, feel restless and tense, and have a rapid heartbeat. It can be a normal reaction to stress. For example, you might feel anxious when faced with a difficult problem at work, before taking a test, or before making an important decision. It can help you to cope. The anxiety may give you a boost of energy or help you focus. But for people with anxiety disorders, the fear is not temporary and can be overwhelming.\n\nWhat are anxiety disorders?\nAnxiety disorders are conditions in which you have anxiety that does not go away and can get worse over time. The symptoms can interfere with daily activities such as job performance, schoolwork, and relationships.\n\nWhat are the types of anxiety disorders?\nThere are several types of anxiety disorders, including:\n\nGeneralized anxiety disorder (GAD).People with GAD worry about ordinary issues such as health, money, work, and family. But their worries are excessive, and they have them almost every day for at least 6 months.\nPanic disorder. People with panic disorder have panic attacks. These are sudden, repeated periods of intense fear when there is no danger. The attacks come on quickly and can last several minutes or more.\nPhobias. People with phobias have an intense fear of something that poses little or no actual danger. Their fear may be about spiders, flying, going to crowded places, or being in social situations (known as social anxiety).\nWhat causes anxiety disorders?\nThe cause of anxiety is unknown. Factors such as genetics, brain biology and chemistry, stress, and your environment may play a role",
+      "author": "Manik Chawla",
+      "photo": "https://media.istockphoto.com/id/1281210009/photo/depressed-asian-woman-in-deep-many-thoughts-having-problem-with-over-thinking.jpg?s=612x612&w=is&k=20&c=4abJVjPfK4VVxFktdFef7Hp-xvu1joYuIfxGSqLOME4=",
+      "id": 5
+    }
+  ]
+}

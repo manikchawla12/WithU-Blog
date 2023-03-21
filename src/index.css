@@ -1,13 +1,167 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #050505;
+  box-sizing: border-box;
+}
+.websiteHeader{
+  width: 100%;
+  height: 50vh;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px transparent #f2f2f2 ;
+}
+.navbar h1 {
+  color: #35a9f1;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: #35a9f1;
+}
+/* .content {
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 20px; 
+} */
+.search input[type="text" i]{
+  display: block;
+  margin-top: 6px;
+  padding: 6px 10px;
+  width: 500px;
+  border: 2px solid #9e9a9a;
+  font-family: 'Roboto';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* blog previews / list */
+.blogPage-title{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.blog-list{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  
+}
+.blog-list a{
+  text-decoration: none;
+}
+.blog-preview {
+  width: 25%;
+  padding: 5px 20px;
+  margin: 25px 0px 10px 0px;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 2px 3px 5px rgba(7, 7, 7, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #35a9f1;
+  margin-top: 5px;
+  /* margin-bottom: 8px; */
+}
+.blog-preview img{
+  height: 70%;
+  width: 100%;
+}
+
+/* blog details page */
+.blog-details{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.blog-details p{
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+.blog-details h2 {
+  font-size: 30px;
+  color: #35a9f1;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.blog-details div {
+  font-size: 20px;
+  margin: 20px 0;
+  max-width: 800px;
+  background-color: rgb(210, 203, 203);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.blog-details button {
+  background: #35a9f1;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #35a9f1;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #35a9f1;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer{
+  height: 20vh;
+  background-color:rgb(56,182,255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+footer h6{
+  font-size:1rem;
+  color: white;
+  cursor: pointer;
 }
