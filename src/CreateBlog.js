@@ -15,7 +15,7 @@ const CreateBlog = () => {
     setIsLoading(true);
 
     const blog = { title, body, author, photo };
-    fetch("http://localhost:8000/blogs", {
+    fetch("https://manikchawla12.github.io/db.json/blogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
