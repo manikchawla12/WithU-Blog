@@ -8,12 +8,12 @@ const BlogDetails = () => {
     data: blog,
     isLoading,
     error,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("https://manikchawla12.github.io/db.json/blogs/" + id);
 
   const history = useHistory();
 
   const handleClick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
+    fetch("https://manikchawla12.github.io/db.json/blogs/" + blog.id, {
       method: "DELETE",
     }).then(() => {
       console.log("blog deleted");
